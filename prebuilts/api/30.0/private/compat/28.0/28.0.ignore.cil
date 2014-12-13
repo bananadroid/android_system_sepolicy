@@ -120,6 +120,7 @@
     art_apex_dir
     runtime_service
     sdcard_block_device
+    sdcard_posix
     sensor_privacy_service
     server_configurable_flags_data_file
     simpleperf_app_runner
