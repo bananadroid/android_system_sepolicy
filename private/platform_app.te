@@ -139,6 +139,8 @@ get_prop(platform_app, keyguard_config_prop)
 # allow platform apps to read qemu.hw.mainkeys
 get_prop(platform_app, qemu_hw_prop)
 
+get_prop(platform_app, camera2_exported_camera_prop);
+
 # allow platform apps to create symbolic link
 allow platform_app app_data_file:lnk_file create_file_perms;
 
