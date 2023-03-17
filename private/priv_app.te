@@ -194,6 +194,9 @@ allowxperm priv_app incremental_control_file:file ioctl INCFS_IOCTL_PERMIT_FILL;
 # allow privileged apps to read the vendor property that indicates if Incremental File System is enabled
 get_prop(priv_app, incremental_prop)
 
+# read camera priv list, used by google as
+get_prop(priv_app, camera2_exported_camera_prop)
+
 # Required for Phonesky to be able to read APEX files under /data/apex/active/.
 allow priv_app apex_data_file:dir search;
 allow priv_app staging_data_file:file r_file_perms;
@@ -298,3 +301,5 @@ neverallow priv_app *:{
 
 # Allow priv apps to report off body events to keystore2.
 allow priv_app keystore:keystore2 report_off_body;
+
+allow priv_app unlabeled:filesystem getattr;

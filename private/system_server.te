@@ -822,6 +822,9 @@ get_prop(system_server, hypervisor_prop)
 # Read persist.wm.debug. properties
 get_prop(system_server, persist_wm_debug_prop)
 
+# Read camera priv list
+get_prop(system_server, camera2_exported_camera_prop)
+
 # Create a socket for connections from debuggerd.
 allow system_server system_ndebug_socket:sock_file create_file_perms;
 

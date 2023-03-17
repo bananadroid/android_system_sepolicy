@@ -1,0 +1,2 @@
+type gms_camera_app, domain, coredomain;
+get_prop(gms_camera_app, camera2_exported_camera_prop)

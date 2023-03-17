@@ -17,6 +17,7 @@ bluetooth_domain(untrusted_app)
 
 dontaudit untrusted_app system_linker_exec:file execmod;
 dontaudit untrusted_app proc_loadavg:file read;
+dontaudit untrusted_app camera2_exported_camera_prop:file read;
 
 # Allow webview to access fd shared by sdksandbox for experiments data
 # TODO(b/229249719): Will not be supported in Android U
