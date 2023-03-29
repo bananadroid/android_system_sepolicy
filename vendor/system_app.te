@@ -1,0 +1,6 @@
+# Allow system app to access HALs 
+binder_call(system_app, hal_fingerprint_default)
+binder_call(system_app, hal_audio_default)
+binder_call(system_app, hal_camera_default)
+binder_call(system_app, hal_contexthub_default)
+binder_call(system_app, hal_gnss_default)

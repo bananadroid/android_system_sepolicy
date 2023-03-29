@@ -84,6 +84,15 @@ get_prop(system_app, incremental_prop)
 # Camera
 get_prop(system_app, camera2_exported_camera_prop)
 
+# Allow system to access zram-related fs
+allow system_app proc_pagetypeinfo:file r_file_perms;
+allow system_app sysfs_zram:dir r_dir_perms;
+
+# Allow system app to find services 
+dontaudit system_app system_suspend_control_service:service_manager find;
+dontaudit system_app system_suspend_control_internal_service:service_manager find;
+dontaudit system_app tracingproxy_service:service_manager find;
+
 # Create /data/anr/traces.txt.
 allow system_app anr_data_file:dir ra_dir_perms;
 allow system_app anr_data_file:file create_file_perms;
