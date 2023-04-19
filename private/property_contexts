@@ -484,6 +484,13 @@ persist.bluetooth.btsnoopdefaultmode           u:object_r:bluetooth_prop:s0 exac
 persist.bluetooth.btsnooplogmode               u:object_r:bluetooth_prop:s0 exact enum empty disabled filtered full
 persist.bluetooth.factoryreset                 u:object_r:bluetooth_prop:s0 exact bool
 
+bluetooth.a2dp.source.sbc_priority.config            u:object_r:bluetooth_config_prop:s0 exact int
+bluetooth.a2dp.source.aac_priority.config            u:object_r:bluetooth_config_prop:s0 exact int
+bluetooth.a2dp.source.aptx_priority.config           u:object_r:bluetooth_config_prop:s0 exact int
+bluetooth.a2dp.source.aptx_hd_priority.config        u:object_r:bluetooth_config_prop:s0 exact int
+bluetooth.a2dp.source.ldac_priority.config           u:object_r:bluetooth_config_prop:s0 exact int
+bluetooth.a2dp.source.lc3_priority.config            u:object_r:bluetooth_config_prop:s0 exact int
+
 bluetooth.hardware.power.operating_voltage_mv        u:object_r:bluetooth_config_prop:s0 exact int
 bluetooth.hardware.power.idle_cur_ma                 u:object_r:bluetooth_config_prop:s0 exact int
 bluetooth.hardware.power.tx_cur_ma                   u:object_r:bluetooth_config_prop:s0 exact int
@@ -496,6 +503,8 @@ bluetooth.core.gap.le.privacy.enabled                u:object_r:bluetooth_config
 
 bluetooth.device.default_name                        u:object_r:bluetooth_config_prop:s0 exact string
 bluetooth.device.class_of_device                     u:object_r:bluetooth_config_prop:s0 exact string
+
+bluetooth.le.disable_apcf_extended_features          u:object_r:bluetooth_config_prop:s0 exact bool
 
 bluetooth.profile.a2dp.sink.enabled                  u:object_r:bluetooth_config_prop:s0 exact bool
 bluetooth.profile.a2dp.source.enabled                u:object_r:bluetooth_config_prop:s0 exact bool
@@ -525,6 +534,8 @@ bluetooth.profile.pbap.client.enabled                u:object_r:bluetooth_config
 bluetooth.profile.pbap.server.enabled                u:object_r:bluetooth_config_prop:s0 exact bool
 bluetooth.profile.sap.server.enabled                 u:object_r:bluetooth_config_prop:s0 exact bool
 bluetooth.profile.vcp.controller.enabled             u:object_r:bluetooth_config_prop:s0 exact bool
+
+bluetooth.sco.disable_enhanced_connection            u:object_r:bluetooth_config_prop:s0 exact bool
 
 persist.nfc.debug_enabled                      u:object_r:nfc_prop:s0 exact bool
 
